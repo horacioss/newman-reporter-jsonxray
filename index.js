@@ -16,7 +16,7 @@ function createReport(summary) {
         summary: "Test Execution for Test Plan " + options.testPlaKey,
         startDate: new Date(summary.run.timings.started),
         finishDate: new Date(summary.run.timings.completed),
-        testPlaKey: options.testPlaKey
+        testPlanKey: options.testPlaKey
     }
     
     let tests = [];
