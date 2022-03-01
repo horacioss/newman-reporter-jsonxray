@@ -1,6 +1,6 @@
 {
   "name": "@horacioss2013/newman-reporter-jsonxray",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple newman reporter for xray json format. ",
   "main": "index.js",
   "scripts": {
