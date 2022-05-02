@@ -30,12 +30,12 @@ function createReport(summary) {
         let testSummary = requestName.includes("|") ? requestName.split("|")[1] :  requestName;
         let status = "PASSED";
         let start = new Date(timeToStarTest);
-        let finish = new Date(timeToStarTest + execution.response?.responseTime);
+        let finish = new Date(timeToStarTest + execution.response.responseTime);
         let testRunComment = "Execution Successfully"
-        timeToStarTest += execution.response?.responseTime;
+        timeToStarTest += execution.response.responseTime;
         let assertions = execution.assertions;
 
-        for(let i = 0; i< assertions?.length; i++) {
+        for(let i = 0; i< assertions.length; i++) {
             if (assertions[i].error) {
                 testRunComment = `Assertion Error: ${assertions[i].error.message} in \"${assertions[i].error.test}\"`;
                 status = "FAILED"
