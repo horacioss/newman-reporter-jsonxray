@@ -1,6 +1,6 @@
 let _ = require("lodash");
 let path = require("path");
-const options = require(path.resolve(process.cwd(), "Options.json"));
+const options = require(path.resolve(process.cwd(), "config.json"));
 
 /**
  * 
