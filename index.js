@@ -13,7 +13,7 @@ function createReport(summary) {
 
     let testExecutionInfo = {
         user: options.user,
-        summary: "Test Execution for Test Plan " + options.testPlaKey,
+        summary: "Test Execution for Test Plan " + options.testPlanKey,
         startDate: new Date(summary.run.timings.started),
         finishDate: new Date(summary.run.timings.completed),
         testPlanKey: options.testPlanKey
